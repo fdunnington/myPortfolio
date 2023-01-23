@@ -1307,3 +1307,9 @@ h6 {
 .footer .credits a {
   color: var(--color-primary);
 }
+
+/*Added by me*/
+.project-image {
+  padding-bottom: 5%;
+  max-width: 100%;
+}
