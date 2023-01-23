@@ -676,6 +676,7 @@ h6 {
   border-radius: 50%;
   border: 5px solid #474a4d;
   margin: 0 auto;
+  display: none;
 }
 
 .testimonials .testimonial-item h3 {
