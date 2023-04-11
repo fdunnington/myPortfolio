@@ -653,6 +653,12 @@ h6 {
   margin-top: 80px;
 }
 
+.testimonial-single {
+  background: var(--color-secondary);
+  padding: 10px;
+  margin: 40px auto;
+}
+
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
@@ -669,10 +675,6 @@ h6 {
   margin-bottom: 15px;
 }
 
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
@@ -693,6 +695,11 @@ h6 {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
+}
+
+.bi-star-fill::before {
+  color: var(--color-primary);
+  margin: 0 1px;
 }
 
 .testimonials .testimonial-item p {
