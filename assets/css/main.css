@@ -129,13 +129,15 @@ h6 {
   border-radius: 4px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin: 5px 0;
   transition: 0.3s;
-  color: #fff;
-  background: var(--color-primary);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  text-decoration: underline;
+  color: var(--dusky-grey);
 }
 
 /*--------------------------------------------------------------
@@ -809,29 +811,29 @@ h6 {
 /*--------------------------------------------------------------
 # Gallery Single Section
 --------------------------------------------------------------*/
-.gallery-single .portfolio-details-slider img {
+.custom-build-bootstrap .portfolio-details-slider img {
   width: 100%;
 }
 
-.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.custom-build-bootstrap .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
 
-.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.custom-build-bootstrap .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
 
-.gallery-single .swiper-button-prev,
-.gallery-single .swiper-button-next {
+.custom-build-bootstrap .swiper-button-prev,
+.custom-build-bootstrap .swiper-button-next {
   width: 48px;
   height: 48px;
 }
 
-.gallery-single .swiper-button-prev:after,
-.gallery-single .swiper-button-next:after {
+.custom-build-bootstrap .swiper-button-prev:after,
+.custom-build-bootstrap .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 24px;
@@ -844,20 +846,20 @@ h6 {
   transition: 0.3s;
 }
 
-.gallery-single .swiper-button-prev:hover:after,
-.gallery-single .swiper-button-next:hover:after {
+.custom-build-bootstrap .swiper-button-prev:hover:after,
+.custom-build-bootstrap .swiper-button-next:hover:after {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 575px) {
 
-  .gallery-single .swiper-button-prev,
-  .gallery-single .swiper-button-next {
+  .custom-build-bootstrap .swiper-button-prev,
+  .custom-build-bootstrap .swiper-button-next {
     display: none;
   }
 }
 
-.gallery-single .portfolio-info h3 {
+.custom-build-bootstrap .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -866,7 +868,7 @@ h6 {
   font-family: var(--font-secondary);
 }
 
-.gallery-single .portfolio-info h3:after {
+.custom-build-bootstrap .portfolio-info h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -877,26 +879,26 @@ h6 {
   bottom: 0;
 }
 
-.gallery-single .portfolio-info ul {
+.custom-build-bootstrap .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.gallery-single .portfolio-info ul li {
+.custom-build-bootstrap .portfolio-info ul li {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 }
 
-.gallery-single .portfolio-info ul strong {
+.custom-build-bootstrap .portfolio-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
   color: #6b7075;
   font-size: 14px;
 }
 
-.gallery-single .portfolio-info .btn-visit {
+.custom-build-bootstrap .portfolio-info .btn-visit {
   padding: 8px 40px;
   background: var(--color-primary);
   color: #fff;
@@ -904,11 +906,11 @@ h6 {
   transition: 0.3s;
 }
 
-.gallery-single .portfolio-info .btn-visit:hover {
+.custom-build-bootstrap .portfolio-info .btn-visit:hover {
   background: #2cbc85;
 }
 
-.gallery-single .portfolio-description h2 {
+.custom-build-bootstrap .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -916,11 +918,11 @@ h6 {
   font-family: var(--font-secondary);
 }
 
-.gallery-single .portfolio-description p {
+.custom-build-bootstrap .portfolio-description p {
   padding: 0;
 }
 
-.gallery-single .portfolio-description .testimonial-item {
+.custom-build-bootstrap .portfolio-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
   background: var(--color-secondary);
@@ -928,7 +930,7 @@ h6 {
   margin-bottom: 50px;
 }
 
-.gallery-single .portfolio-description .testimonial-item .testimonial-img {
+.custom-build-bootstrap .portfolio-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   border: 6px solid #2e3133;
@@ -936,33 +938,33 @@ h6 {
   margin: 0 10px 0 0;
 }
 
-.gallery-single .portfolio-description .testimonial-item h3 {
+.custom-build-bootstrap .portfolio-description .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
 }
 
-.gallery-single .portfolio-description .testimonial-item h4 {
+.custom-build-bootstrap .portfolio-description .testimonial-item h4 {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
 }
 
-.gallery-single .portfolio-description .testimonial-item .quote-icon-left,
-.gallery-single .portfolio-description .testimonial-item .quote-icon-right {
+.custom-build-bootstrap .portfolio-description .testimonial-item .quote-icon-left,
+.custom-build-bootstrap .portfolio-description .testimonial-item .quote-icon-right {
   color: #5bd9a9;
   font-size: 26px;
   line-height: 0;
 }
 
-.gallery-single .portfolio-description .testimonial-item .quote-icon-left {
+.custom-build-bootstrap .portfolio-description .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.gallery-single .portfolio-description .testimonial-item .quote-icon-right {
+.custom-build-bootstrap .portfolio-description .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -970,7 +972,7 @@ h6 {
   transform: scale(-1, -1);
 }
 
-.gallery-single .portfolio-description .testimonial-item p {
+.custom-build-bootstrap .portfolio-description .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
@@ -979,7 +981,7 @@ h6 {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
+.work-with-me .service-item {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
   background: var(--color-secondary);
@@ -988,7 +990,7 @@ h6 {
   z-index: 1;
 }
 
-.services .service-item:before {
+.work-with-me .service-item:before {
   content: "";
   position: absolute;
   background: #1d1f20;
@@ -997,7 +999,7 @@ h6 {
   z-index: -1;
 }
 
-.services .service-item i {
+.work-with-me .service-item i {
   background: var(--color-primary);
   color: #fff;
   font-size: 24px;
@@ -1010,24 +1012,24 @@ h6 {
   border-radius: 50%;
 }
 
-.services .service-item h4 {
+.work-with-me .service-item h4 {
   font-weight: 600;
   margin: 15px 0 0 0;
   transition: 0.3s;
   font-size: 20px;
 }
 
-.services .service-item h4 a {
+.work-with-me .service-item h4 a {
   color: #fff;
 }
 
-.services .service-item p {
+.work-with-me .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin: 15px 0 0 0;
 }
 
-.services .service-item:hover:before {
+.work-with-me .service-item:hover:before {
   background: var(--color-primary);
   right: 0;
   top: 0;
@@ -1036,12 +1038,12 @@ h6 {
   border-radius: 0px;
 }
 
-.services .service-item:hover h4 a,
-.services .service-item:hover p {
+.work-with-me .service-item:hover h4 a,
+.work-with-me .service-item:hover p {
   color: #fff;
 }
 
-.services .service-item:hover i {
+.work-with-me .service-item:hover i {
   background: #fff;
   color: var(--color-primary);
 }
