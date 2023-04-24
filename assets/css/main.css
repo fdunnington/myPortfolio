@@ -882,6 +882,7 @@ h6 {
   border-radius: 10px;
   padding: 2px 5px;
   color: #a3a3a3;
+  white-space: nowrap;
 }
 
 .inline-content {
@@ -1399,4 +1400,15 @@ h6 {
   top: 0;
   background: #000;
   border: 2px solid var(--color-primary);
+}
+
+.sticky-top-section {
+  position: sticky;
+  top: 150px;
+}
+
+.padded-img {
+  max-width: 80%;
+  margin: auto;
+  padding: 4% 0;
 }
