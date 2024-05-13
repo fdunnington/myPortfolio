@@ -521,7 +521,7 @@ li {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: var(--default-light);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -537,7 +537,7 @@ li {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--font-primary);
     letter-spacing: 1px;
     white-space: nowrap;
     transition: 0.3s;
@@ -636,8 +636,11 @@ li {
   min-height: 350px;
   background-color: var(--default-light);
   color: var(--font-default);
-  p {
-    color: var(--color-default);
+}
+
+@media (max-width: 995px) {
+  .case-study-info {
+    min-height: 300px;
   }
 }
 
@@ -648,6 +651,7 @@ li {
 }
 
 .card-title {
+  color: var(--font-primary);
   font-size: 24px;
   font-weight: 500;
 }
@@ -664,13 +668,13 @@ li {
 }
 
 .case-study-two-image {
-  background-image: url("..img/gallery/CJH.png");
+  background-image: url("/assets/img/gallery/CJH.png");
   background-size: cover;
 
 }
 
 .home-page-background {
-  background-image: url("../img/Home.png");
+  background-image: url("/assets/img/Home.png");
   background-size: cover;
 }
 /*--------------------------------------------------------------
@@ -743,6 +747,16 @@ li {
   bottom: -50px;
   right: -50px;
   box-shadow: inset rgba(244, 240, 249, 1) 0 0 60px 10px;
+}
+
+@media (max-width: 900px) {
+  .circle-contact {
+  height: 150px;
+  width: 150px;
+  font-size: 14px;
+  bottom: -25px;
+  right: -25px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -862,9 +876,13 @@ li {
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .h2 {
     font-size: 32px;
   }
+  h1 {
+    font-size: 36px;
+  }
+
 }
 
 /*--------------------------------------------------------------
