@@ -654,7 +654,7 @@ li {
 
 .case-study-one-image {
   content: "";
-  background-image: url("/assets/img/gallery/hiking.png");
+  background-image: url("assets/img/gallery/hiking.png");
   background-size: cover;
 }
 
