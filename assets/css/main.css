@@ -630,12 +630,11 @@ li {
 }
 
 .case-study-info {
-  color: var(--default-light);
   padding: 2% 10%;
   margin: auto;
   min-height: 350px;
   background-color: var(--default-light);
-  color: var(--font-default);
+
 }
 
 @media (max-width: 995px) {
@@ -650,10 +649,14 @@ li {
   font-size: 13px;
 }
 
-.card-title {
-  color: var(--font-primary);
-  font-size: 24px;
-  font-weight: 500;
+.case-study-info p {
+font-size: 20px;
+font-weight: 500;
+}
+
+.card-title a {
+  color: var(--font-default) !important;
+
 }
 
 .case-study-one-image {
