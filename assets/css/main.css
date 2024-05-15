@@ -666,13 +666,13 @@ color: var(--font-main);
 }
 
 .case-study-two-image {
-  background-image: url("../assets/img/gallery/CJH.png");
+  background-image: url("../img/gallery/CJH.png");
   background-size: cover;
 
 }
 
 .home-page-background {
-  background-image: url("../assets/img/Home.png");
+  background-image: url("assets/img/Home.png");
   background-size: cover;
 }
 /*--------------------------------------------------------------
