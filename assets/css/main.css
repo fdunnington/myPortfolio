@@ -672,7 +672,7 @@ color: var(--font-main);
 }
 
 .home-page-background {
-  background-image: url("assets/img/Home.png");
+  background-image: url("../img/Home.png");
   background-size: cover;
 }
 /*--------------------------------------------------------------
