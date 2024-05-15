@@ -26,7 +26,6 @@
   --translucent: rgba(255, 255, 255, 0.2);
   --font-main: #1D1A1A;
   --inset-box: inset rgba(244, 240, 249, 1) 0 0 60px 10px;
-  
 }
 
 /* Smooth scroll behavior */
@@ -41,8 +40,6 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   background-color: var(--default-light);
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 a {
@@ -653,12 +650,9 @@ li {
 .case-study-info p {
 font-size: 20px;
 font-weight: 500;
+color: var(--font-main);
 }
 
-.card-title a {
-  color: var(--font-default) !important;
-
-}
 
 .case-study-one-image {
   content: "";
@@ -730,8 +724,20 @@ font-weight: 500;
 /*--------------------------------------------------------------
 # Service page
 --------------------------------------------------------------*/
+.service-h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 .service-page-content {
-  padding: 150px 5% 150px 5%;
+  padding: 120px 5% 120px 5%;
+}
+
+
+@media (min-width: 900px) {
+  .service-page-content {
+    padding: 150px 5% 150px 5%;
+  }
 }
 
 .list-start {
@@ -886,7 +892,6 @@ font-weight: 500;
   h1 {
     font-size: 36px;
   }
-
 }
 
 /*--------------------------------------------------------------
