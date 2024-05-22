@@ -685,14 +685,14 @@ color: var(--font-main);
 }
 
 .case-study-two-image {
-  background-image: url("/assets/img/gallery/cjh-casestudy.png");
+  background-image: url("../img/gallery/cjh-casestudy.png");
   background-size: cover;
   background-position: center top;
 
 }
 
 .home-page-background {
-  background-image: url("/assets/img/Home.png");
+  background-image: url("../img/Home.png");
   background-size: cover;
 }
 /*--------------------------------------------------------------
