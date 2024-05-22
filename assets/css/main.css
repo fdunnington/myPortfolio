@@ -10,13 +10,20 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+
 :root {
   --font-default: "Inter", sans-serif, "DM Sans", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Cardo", sans-serif;
 }
 
-/* Colors */
+/* Colors & radius */
 :root {
   --color-default: #1D1A1A;
   --default-light:#F4F0F9;
@@ -26,6 +33,8 @@
   --translucent: rgba(255, 255, 255, 0.2);
   --font-main: #1D1A1A;
   --inset-box: inset rgba(244, 240, 249, 1) 0 0 60px 10px;
+  --box-shadow: rgba(244, 240, 249, .6) 5px 5px 60px 10px;
+
 }
 
 /* Smooth scroll behavior */
@@ -40,6 +49,7 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   background-color: var(--default-light);
+  overflow-x: hidden; 
 }
 
 a {
@@ -85,10 +95,6 @@ a {
   letter-spacing: .3px;
 }
 
-p {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
 
 li {
   margin-bottom: 10px;
@@ -617,47 +623,60 @@ li {
 }
 
 .gallery-container {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .case-study {
-  border-radius: 7px;
-  overflow: hidden;
-  margin: 5%;
-  box-shadow: rgba(29, 26, 26, .25) 0 4px 4px 0;
+  border-radius: 4px;
+}
+.info-box {
+  margin: 2rem auto;
+}
+
+
+[class*="col-"] {
+  margin-bottom: 30px;
 }
 
 .case-study-info {
-  padding: 2% 10%;
-  margin: auto;
-  min-height: 350px;
+  padding: 5%;
   background-color: var(--default-light);
-
 }
 
-@media (max-width: 995px) {
-  .case-study-info {
-    min-height: 300px;
+@media (max-width: 767px) {
+
+  .info-box {
+    position: sticky;
+    top: 150px;
   }
+
+  .info-box-one {
+    transform: rotate(2deg);
+   }
+   .info-box-two {
+     transform: rotate(-2deg);
+   }
+
 }
 
 .uppercase {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
 }
 
 .case-study-info p {
-font-size: 20px;
-font-weight: 500;
 color: var(--font-main);
 }
 
+.case-study-image {
+  min-height: 350px;
+}
 
 .case-study-one-image {
-  content: "";
   background-image: url("../img/gallery/hiking.png");
   background-size: cover;
+  background-position: center top;
 }
 
 .case-study-two {
@@ -666,13 +685,14 @@ color: var(--font-main);
 }
 
 .case-study-two-image {
-  background-image: url("../img/gallery/CJH.png");
+  background-image: url("/assets/img/gallery/cjh-casestudy.png");
   background-size: cover;
+  background-position: center top;
 
 }
 
 .home-page-background {
-  background-image: url("../img/Home.png");
+  background-image: url("/assets/img/Home.png");
   background-size: cover;
 }
 /*--------------------------------------------------------------
@@ -835,7 +855,7 @@ color: var(--font-main);
   min-height: 30vh;
   background-size: cover;
   position: relative;
-  padding: 140px 0 60px 0;
+  padding: 140px 0 0 0;
 }
 
 .hero h2 {
@@ -892,6 +912,7 @@ color: var(--font-main);
   h1 {
     font-size: 36px;
   }
+
 }
 
 /*--------------------------------------------------------------
