@@ -1,14 +1,7 @@
 /**
 * Template Name: .fiDunnington - v1.2.0
-* Template URL: https://bootstrapmade.com/.fiDunnington-bootstrap-photography-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
 */
 
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
 /* Fonts */
 
 * {
@@ -663,6 +656,17 @@ li {
 
 }
 
+.tag-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  color: rgb(57, 56, 85);
+  font-size: 12px;
+}
+
+
 .uppercase {
   text-transform: uppercase;
   font-weight: 500;
@@ -692,7 +696,12 @@ color: var(--font-main);
   background-image: url("../img/gallery/cjh.png");
   background-size: cover;
   background-position: center top;
+}
 
+.case-study-three-image {
+  background-image: url("../img/gallery/profs.png");
+  background-size: cover;
+  background-position: center top;
 }
 
 .home-page-background {
