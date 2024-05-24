@@ -649,12 +649,15 @@ li {
 
   .info-box-one {
     transform: rotate(2deg);
+    z-index: 3;
    }
    .info-box-two {
      transform: rotate(-2deg);
+     z-index: 2;
    }
    .info-box-three {
     transform: rotate(2deg);
+    z-index: 1;
   }
 
 }
