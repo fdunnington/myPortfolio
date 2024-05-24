@@ -622,7 +622,7 @@ li {
 
 .gallery-container {
   min-height: 50vh;
-  margin: 100px auto;
+  margin: 60px auto;
   
 }
 
@@ -880,7 +880,7 @@ color: var(--font-main);
   min-height: 30vh;
   background-size: cover;
   position: relative;
-  padding: 140px 0 0 0;
+  padding: 90px 0 0 0;
 }
 
 .hero h2 {
