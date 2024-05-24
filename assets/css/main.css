@@ -389,6 +389,10 @@ li {
     padding: 0;
   }
 
+  .mobile-nav-only {
+    display: none;
+  }
+
   .navbar ul {
     margin: 0;
     padding: 0;
