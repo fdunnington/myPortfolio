@@ -26,7 +26,7 @@
   --translucent: rgba(255, 255, 255, 0.2);
   --font-main: #1D1A1A;
   --inset-box: inset rgba(244, 240, 249, 1) 0 0 60px 10px;
-  --box-shadow: rgba(244, 240, 249, .6) 5px 5px 60px 10px;
+  --box-shadow: rgba(107, 0, 107, 0.6) 20px 20px 60px 60px;
 
 }
 
@@ -69,16 +69,29 @@ li {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 40px;
 }
-
 
 h2 {
   font-size: 26px;
   margin-bottom: 20px;
   margin-top: 30px;
 }
+
+
+/* small screen fonts*/
+@media (max-width: 995px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  
+}
+
 
 p,
 ul,
@@ -87,7 +100,6 @@ a {
   font-size: 18px;
   letter-spacing: .3px;
 }
-
 
 li {
   margin-bottom: 10px;
@@ -100,18 +112,6 @@ li {
   padding: 120px 0 60px 0;
   min-height: 20vh;
   position: relative;
-}
-
-.page-header h2 {
-  font-size: 56px;
-  font-weight: 500;
-  color: var(--font-main);
-}
-
-@media (max-width: 768px) {
-  .page-header h2 {
-    font-size: 36px;
-  }
 }
 
 .page-header p {
@@ -316,7 +316,7 @@ li {
   z-index: 997;
   padding: 10px 0;
   background: rgb(244,240,249);
-  box-shadow: rgba(244,240,249,1) 0px 0px 50px 30px;
+  box-shadow: rgba(244,240,249,1) 0px 0px 20px 20px;
 }
 
 .header .logo {
@@ -622,17 +622,14 @@ li {
 
 .gallery-container {
   min-height: 50vh;
-  margin: 60px auto;
-  
+  margin: 90px auto;
 }
 
-.case-study {
-  border-radius: 24px;
-}
 
 .info-box {
   margin: 2rem auto;
 }
+
 
 .case-study-info {
   padding: 5%;
@@ -645,6 +642,15 @@ li {
   .info-box {
     position: sticky;
     bottom: 0px;
+  }
+
+  .gallery-container {
+    min-height: 90vh;
+    margin: 50px auto;
+  }
+
+  .case-study {
+    transform: rotate(2deg);
   }
 
   .info-box-one {
@@ -713,26 +719,21 @@ color: var(--font-main);
 .home-page-background {
   background-image: url("../img/Home.png");
   background-size: cover;
+  padding: 5%;
 }
 /*--------------------------------------------------------------
 # Case study page
 --------------------------------------------------------------*/
 .case-study-content {
   margin-top: 150px;
-
-  h1 {
-    font-size: 26px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 995px) {
+
   .case-study-content {
   margin-top: 50px;
   }
+
 }
 
 .mobile-image {
@@ -930,15 +931,6 @@ color: var(--font-main);
   box-shadow: rgba(152, 17, 255, 0.23) 0 0 20px 10px;
 }
 
-@media (max-width: 768px) {
-  .h2 {
-    font-size: 32px;
-  }
-  h1 {
-    font-size: 36px;
-  }
-
-}
 
 /*--------------------------------------------------------------
 # Footer
