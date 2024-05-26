@@ -630,13 +630,10 @@ li {
   margin: 2rem auto;
 }
 
-
 .case-study-info {
   padding: 5%;
   background-color: var(--default-light);
   border-radius: 0px 0px 7px 7px;
-  border: 7px solid black;
-  border-top: none;
 }
 
 @media (max-width: 767px) {
