@@ -635,6 +635,8 @@ li {
   padding: 5%;
   background-color: var(--default-light);
   border-radius: 0px 0px 7px 7px;
+  border: 7px solid black;
+  border-top: none;
 }
 
 @media (max-width: 767px) {
@@ -694,7 +696,7 @@ color: var(--font-main);
 }
 
 .case-study-one-image {
-  background-image: url("../img/gallery/hiking.png");
+  background-image: url("../img/gallery/inghams.png");
   background-size: cover;
   background-position: center top;
 }
@@ -705,13 +707,13 @@ color: var(--font-main);
 }
 
 .case-study-two-image {
-  background-image: url("../img/gallery/cjh.png");
+  background-image: url("../img/gallery/Criminal Justice Hub.png");
   background-size: cover;
   background-position: center top;
 }
 
 .case-study-three-image {
-  background-image: url("../img/gallery/profs.png");
+  background-image: url("../img/gallery/FlexiTog.png");
   background-size: cover;
   background-position: center top;
 }
@@ -892,14 +894,6 @@ color: var(--font-main);
   background-size: cover;
   position: relative;
   padding: 90px 0 0 0;
-}
-
-.hero h2 {
-  margin: 0 0 10px 0;
-  font-size: 38px;
-  font-weight: 700;
-  color: var(--font-main);
-  font-family: var(--font-secondary);
 }
 
 .hero h2 span {
