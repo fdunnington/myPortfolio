@@ -696,7 +696,7 @@ color: var(--font-main);
 }
 
 .case-study-one-image {
-  background-image: url("../img/gallery/inghams.png");
+  background-image: url("../img/gallery/hiking.png");
   background-size: cover;
   background-position: center top;
 }
@@ -707,7 +707,7 @@ color: var(--font-main);
 }
 
 .case-study-two-image {
-  background-image: url("../img/gallery/Criminal Justice Hub.png");
+  background-image: url("../img/gallery/cjh.png");
   background-size: cover;
   background-position: center top;
 }
