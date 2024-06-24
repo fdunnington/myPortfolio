@@ -716,9 +716,9 @@ color: var(--font-main);
 }
 
 .home-page-background {
-  background-image: url("../img/Home.png");
+  /* background-image: url("../img/Home.png");
   background-size: cover;
-  padding: 5%;
+  padding: 5%; */
 }
 
 
@@ -957,4 +957,56 @@ color: var(--font-main);
 
 .footer .credits a {
   color: var(--color-primary);
+}
+
+/*Experiments*/
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  background-color: transparent;
+}
+
+.card {
+  background-color: #fff;
+  text-align: left;
+  padding: 2%;
+  box-shadow: rgba(212, 221, 235, 0.75) 4px 4px 4px 0px;
+  border-radius: 7px;
+  border: none;
+}
+
+
+@media only screen and (min-width: 978px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  
+  .item5 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start:3
+  }
+  
+  .item6 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .item5 {
+    display: none;
+  }
+  
 }
