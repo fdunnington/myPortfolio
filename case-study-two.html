@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Case Study Two</title>
-  <meta content="" name="description">
+  <title>.fiDunnington</title>
+  <meta content="I'm a Visual UX designer and frontend developer based in Europe" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -16,7 +16,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -51,13 +54,18 @@
   </header>
   <!-- ======= End Page Header ======= -->
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
+  <main id="main" data-aos="fade" data-aos-delay="100">
 
     <!-- ======= Gallery Single Section ======= -->
-    <section class="case-study-content">
-      <div class="container">
-
-        <div class="row justify-content-between gy-5 mt-4">
+    <section class="container case-study-content">
+      <div class="card">
+        <div class="icon-header">
+          <h2 class="card-title">Case study</h2>
+            <a href="case-study-three.html" class="btn" role="button" aria-pressed="true">
+              Next <i data-feather="arrow-right"></i>
+            </a>
+        </div>
+        <div class="row card-body justify-content-between gy-5 mt-4">
 
           <div class="col-lg-5">
             <div class="portfolio-description">
@@ -102,7 +110,6 @@
           </div>
 
         </div>
-
       </div>
     </section><!-- End Gallery Single Section -->
 
@@ -119,9 +126,6 @@
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -132,6 +136,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Feather JS Files -->
+  <script>
+    feather.replace();
+  </script>
 
 </body>
 

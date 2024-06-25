@@ -13,7 +13,6 @@
 :root {
   --font-default: "DM Sans", sans-serif;;
   --font-primary: "DM Sans", sans-serif;;
-  --font-secondary: "Cardo", sans-serif;
 }
 
 /* Colors & radius */
@@ -47,7 +46,7 @@ body {
 
 #main {
   min-height: 90vh;
-  padding: 90px 0 0 0;
+  padding: 60px 0 0 0;
 }
 
 a {
@@ -1067,6 +1066,7 @@ color: var(--font-main);
   box-shadow: rgba(212, 221, 235, 0.75) 4px 4px 4px 0px;
   border-radius: 7px;
   border: none;
+  overflow: hidden;
 }
 
 .card h2 {
