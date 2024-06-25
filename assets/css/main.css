@@ -45,8 +45,7 @@ body {
 }
 
 #main {
-  min-height: 90vh;
-  padding: 60px 0 0 0;
+  padding: 5vh 0 0 0;
 }
 
 a {
@@ -372,6 +371,9 @@ li {
       bottom: 16px;
       left: 0%;
       right: 0%;
+  }
+  #main {
+    padding: 0;
   }
 }
 
@@ -1078,7 +1080,7 @@ color: var(--font-main);
   display: inline-flex;
   justify-content: space-between;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  border-bottom:#d3d3d3 solid;
+  border-bottom:#d3d3d3 solid .3px;
 }
 
 .icon-header button {
