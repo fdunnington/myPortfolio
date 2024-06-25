@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Gallery</title>
-  <meta content="" name="description">
+  <title>.fiDunnington</title>
+  <meta content="I'm a Visual UX designer and frontend developer based in Europe" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -16,7 +16,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -35,48 +38,27 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+  <!-- ======= NEW Header ======= -->
+  <header class="nav-fixed">
+      <div class="nav">
+        <a href="#" class="floating-indicator w-inline-block"></a>
+        <a id="nav-item" href="/" aria-current="page" class="nav-item w-inline-block w--current">
+          <div class="nav-text home">Home</div>
+        </a>
+        <a id="nav-item" href="gallery.html" class="nav-item w-inline-block">
+          <div class="nav-text project">Work</div>
+        </a>
+        <a id="nav-item" href="contact.html" class="nav-item w-inline-block">
+          <div class="nav-text contact">Contact</div>
+        </a></div>
+  </header>
+  <!-- ======= End Page Header ======= -->
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <!--i class="bi bi-camera"></!--i-->
-        <h1>.fiD</h1>
-      </a>
-      
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gallery.html">Project Gallery</a></li>
-          <li class="mobile-nav-only"><a href="content-design.html">Content Design</a></li>
-          <li class="mobile-nav-only"><a href="ux-design.html">UX Design</a></li>
-          <li class="mobile-nav-only"><a href="seo.html">SEO</a></li>
-          <li class="mobile-nav-only"><a href="information-architecture.html">Information Architecture</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <div class="header-social-links">
-        <a href="https://dribbble.com/fi_dunnington" class="dribbble" target="_blank"><i class="bi bi-dribbble"></i></a>
-        <a href="https://github.com/fdunnington" class="github" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram" target="_blank"></i></a>
-        <a href="#" class="https://www.linkedin.com/in/fidunnington/" target="_blank"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main" data-aos="fade" data-aos-delay="1500">
-
-    <!-- ======= End Page Header ======= -->
+  <main id="main" data-aos="fade" data-aos-delay="100">
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
-      <div class="container-fluid">
+      <div class="container">
 
         <div class="row gy-4 justify-content-center">
           <div class="col-xl-3 col-lg-4 col-md-6">
@@ -321,9 +303,6 @@
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -334,6 +313,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Feather JS Files -->
+  <script>
+    feather.replace();
+  </script>
 
 </body>
 

@@ -11,15 +11,15 @@
 
 
 :root {
-  --font-default: "Inter", sans-serif, "DM Sans", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Inter", sans-serif;
+  --font-default: "DM Sans", sans-serif;;
+  --font-primary: "DM Sans", sans-serif;;
   --font-secondary: "Cardo", sans-serif;
 }
 
 /* Colors & radius */
 :root {
   --color-default: #1D1A1A;
-  --default-light:#F4F0F9;
+  --default-light:#F8F8F8;
   --color-primary: #7000FF;
   --color-secondary: #161718;
   --dusky-grey: #45505b;
@@ -43,6 +43,11 @@ body {
   color: var(--color-default);
   background-color: var(--default-light);
   overflow-x: hidden; 
+}
+
+#main {
+  min-height: 90vh;
+  padding: 90px 0 0 0;
 }
 
 a {
@@ -92,6 +97,10 @@ h2 {
   
 }
 
+.p {
+  font-size: 18px;
+  letter-spacing: .3px;
+}
 
 p,
 ul,
@@ -109,8 +118,8 @@ li {
 # Page Header
 --------------------------------------------------------------*/
 .page-header {
-  padding: 120px 0 60px 0;
-  min-height: 20vh;
+  /* padding: 120px 0 60px 0; */
+  /* min-height: 20vh; */
   position: relative;
 }
 
@@ -146,7 +155,7 @@ li {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: -15px;
+  bottom: 16px;
   z-index: 99999;
   background: var(--color-primary);
   width: 44px;
@@ -311,12 +320,82 @@ li {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.nav-fixed {
+  z-index: 4444;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+}
+
+.nav {
+  z-index: 4444;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, .8);
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 56px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .1);
+}
+
+.nav-item {
+  width: 112px;
+  height: 44px;
+  border-radius: 230px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  display: flex;
+}
+
+.floating-indicator {
+  z-index: -1;
+  width: 112px;
+  height: 44px;
+  background-color: #f2f2f2;
+  border-radius: 230px;
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-fixed {
+      position: fixed;
+      top: auto;
+      bottom: 16px;
+      left: 0%;
+      right: 0%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .nav-item, .nav-item.w--current, .floating-indicator {
+      width: 88px;
+      height: 40px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .nav-item, .nav-item.w--current, .floating-indicator {
+      width: 88px;
+      height: 40px;
+  }
+}
+
 .header {
   transition: all 0.5s;
   z-index: 997;
   padding: 10px 0;
-  background: rgb(244,240,249);
-  box-shadow: rgba(244,240,249,1) 0px 0px 20px 20px;
+  /* background: rgb(244,240,249); */
+  /* box-shadow: rgba(244,240,249,1) 0px 0px 20px 20px; */
 }
 
 .header .logo {
@@ -625,7 +704,6 @@ li {
   margin: 90px auto;
 }
 
-
 .info-box {
   margin: 2rem auto;
 }
@@ -836,13 +914,12 @@ color: var(--font-main);
   justify-content: center;
 }
 
-.contact .info-item i {
+.info-item i {
   font-size: 20px;
   color: var(--default-light);
   width: 44px;
   height: 44px;
   padding: 10px;
-  background: var(--color-default);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -858,7 +935,21 @@ color: var(--font-main);
 }
 
 .contact .info-item:hover a {
-  color: var(--color-primary);
+  color: var(--default-light);
+}
+
+.contact-card {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.contact-card a {
+  color: var(--color-default);
+  padding-left: 15px;
+}
+
+.contact-card span {
+  padding-left: 15px;
 }
 
 
@@ -978,6 +1069,25 @@ color: var(--font-main);
   border: none;
 }
 
+.card h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.icon-header {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  border-bottom:#d3d3d3 solid;
+}
+
+.icon-header button {
+  border: none;
+}
+
+.container {
+  max-width: 1200px;
+}
 
 @media only screen and (min-width: 978px) {
   .grid-container {

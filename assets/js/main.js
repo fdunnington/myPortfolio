@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
+  /* const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
       setTimeout(() => {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         preloader.remove();
       }, 2000);
     });
-  }
+  } */
 
   /**
    * Mobile nav toggle
