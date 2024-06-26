@@ -967,7 +967,16 @@ color: var(--font-main);
   padding-left: 15px;
 }
 
+.card-body ul {
+  list-style: none;
+            padding: 0;
+            margin: 0;
+}
 
+.card-header {
+  background-color: transparent;
+  border: none;
+}
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
