@@ -44,8 +44,8 @@ body {
   overflow-x: hidden; 
 }
 
-#main {
-  padding: 5vh 0 0 0;
+main {
+  margin-top: 12vh;
 }
 
 a {
@@ -148,7 +148,7 @@ li {
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
-.scroll-top {
+/* .scroll-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -172,7 +172,7 @@ li {
   visibility: visible;
   opacity: 1;
   bottom: 15px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Preloader
@@ -1000,15 +1000,8 @@ color: var(--font-main);
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-  width: 100%;
-  min-height: 30vh;
-  background-size: cover;
-  position: relative;
-  padding: 90px 0 0 0;
-}
 
-.hero h2 span {
+/* .hero h2 span {
   position: relative;
   z-index: 1;
   padding: 0 5px;
@@ -1046,7 +1039,7 @@ color: var(--font-main);
 .hero .btn-get-started:hover {
   box-shadow: rgba(152, 17, 255, 0.23) 0 0 20px 10px;
 }
-
+ */
 
 /*--------------------------------------------------------------
 # Footer
