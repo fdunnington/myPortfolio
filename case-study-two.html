@@ -67,49 +67,93 @@
         </div>
         <div class="row card-body justify-content-between gy-5 mt-4">
 
-          <div class="col-lg-5">
+          <div class="col-lg">
             <div class="portfolio-description">
-              <h1>From static site to supportive hub: Rebuilding the Criminal Justice Hub website</h1>
-              <p>Navigating the Criminal Justice System can be daunting, especially for those unfamiliar with it. A non-profit organisation dedicated to providing clear and accessible information needed a major website overhaul. The existing WordPress site was no longer sufficient for the organisation’s evolving needs and lacked the functionality required to deliver a top-notch user experience.</p>
-              <p>The task was to migrate the site from WordPress to localgov Drupal to better meet their mission and serve their users, and to perform a content overhaul along the way.</p>
-              <div class="horizontal-image-scroll">
-                <img class="mobile-image horizontal-image-scroll" src="assets/img/gallery/cjh-horizontal.png">
-              </div>
-              <h2>The challenge: Unlocking the potential</h2>
-              <p>The non-profit’s website was packed with valuable information, but finding it was a bit of a challenge due to:</p>
-              <ul>  
-                <li><span class="list-start">Disorganised content:</span> Although the information was present, the layout was confusing. A lack of internal linking resulted in siloed content that was hard to navigate.</li>
-                <li><span class="list-start">A lack of clarity and accessibility:</span> Complex terminology and jargon made it difficult for users unfamiliar with the justice system to understand.</li>
-                <li><span class="list-start">Outdated information:</span> Keeping legal resources current is crucial. There was an opportunity to streamline the content and ensure it reflected the latest developments.</li>
-              </ul>
-              <h2>The Fix: A collaborative redesign</h2>
-              <p>The goal was to transform the Criminal Justice Hub website into a user-friendly and informative resource. Here’s how we approached it:</p>
-              <ul>
-                <li><span class="list-start">Content audit:</span> We conducted a comprehensive audit of the existing content, identifying areas for improvement and opportunities to leverage the website's full potential.</li>
-                <li><span class="list-start">Building a strong framework:</span> We crafted a well-structured Information Architecture (IA), providing a clear framework for organising and presenting information effectively.</li>
-                <li><span class="list-start">Clarity first:</span> Rewriting content in plain, concise language was essential, ensuring users could easily understand their rights and knew where to turn for help.</li>
-                <li><span class="list-start">A familiar face: </span> We used the Government Design System (GDS) to create a user-friendly and familiar-feeling portal similar to other trusted government organisation sites.</li>
-              </ul>
-              <h2>The outcome: Empowering users through information accessibility</h2>
-              <p>The site is now on track to becoming the comprehensive resource it was intended to be:</p>
-              <ul>
-                <li><span class="list-start">Improved navigation:</span> A user-friendly structure helps visitors find the information they need with ease.</li>
-                <li><span class="list-start">Clearer communication:</span> Content is now clear and accessible, equipping users with the knowledge needed to navigate the complexities of the justice system.</li>
-                <li><span class="list-start">A foundation for growth:</span> The robust IA provides a strong base for future development, allowing the website to adapt and expand to meet evolving user needs.</li>
-              </ul>
 
-              <p>This project showcases how a strategic redesign and content overhaul can transform a crucial public resource, making it more intuitive and impactful for users seeking guidance through the complex systems and processes</p>
+                <div>
+                    <h1>Using Object-Oriented UX and ORCA to manage content migration</h1>
+
+                    <p>Object-oriented UX (OOUX) is a design philosophy consolidated by Sophia Prater in 2015 which builds on long-established principles of information processing and applies them in a design environment. The ORCA (Objects, Relationships, Calls to Action, and Attributes) process is how you can achieve it.</p>
+    
+                    <p>The goal? To re-frame the design process in the user's mental model. And what on earth does that mean? It essentially means finding the objects (nouns) that users use to describe an environment and building a framework around those.</p>
+    
+                    <p>Why? Well, it's commonly accepted that humans process environments in terms of the objects within them and the relationships between those objects. Traditionally, digital design starts with verbs - what actions are our users trying to take, and how do we facilitate those. But what do those actions mean if we're not clear on the objects those actions are being taken on? Your users want to wash something? Wash what? If we haven't established the 'what' - the object - first, then how do we know the best way to help them complete the action they want to complete? Washing your hair isn't the same process as washing your car.</p>
+    
+                    <p>So, we've established why it makes sense to use an object-orientated approach. Let's take a look at the process in action, using it to migrate a content-heavy site from WordPress to LocalGov Drupal.</p>
+                </div>
+
+                <div>
+                    <h2>Establishing the objects of our user's affection</h2>
+                    <p>Every environment, every website, every company - all have their own set of objects. Sure, there might be a lot of commonalities within similar spaces, but they're unlikely to be identical. For this reason, it's key to find out what these objects are before you do anything else.</p>
+                    
+                    <p>How do we do this? By hunting for the nouns (a process known in OOUX as 'noun foraging'). It makes a lot of sense when you think about it. Find the words users use to describe an environment and build a framework around them. This means all users - not just customers. Mission statements, customer feedback, talking to stakeholders - there's no limit on where you can get this data. If everyone uses the same nouns to describe the same things, we have a common understanding.</p>
+                    <div class="portfolio-image-container">
+                        <img class="full-width-portfolio-image" src="assets/img/gallery/Noun foraging.png">
+                    </div>
+                    <p>The objects we identified for our content migration project were subjects, guides, articles, contacts, documents, and resources (the website is an informational resource for a non-profit organisation in the legal sector).</p>
+                </div>
+                <div> 
+                    <h2>Objects identified - what now??</h2>
+                    <p>Through a series of processes, we establish relationships between the objects in the environment we are creating and head off on a voyage of discovery to understand how users might interact with the objects around them.</p>
+                    
+                    <p>Lost? No worries - it can seem mind-boggling at first, but let's look at it in the context of our content migration project.</p>
+                    
+                    <p>We had our objects. Next, we needed to work out the relationships between them. What did a topic mean to someone reading an article - what interactions might they be expecting to be able to take? And what was an article to someone on a topic page, or a subject to someone looking at a resource? All this requires a clear understanding of what your objects are. When you have that, you can see how objects relate to one another, and what actions users might expect to be able to take on an object. This is the start of building an intuitive navigation.</p>
+                    
+                    <p>With me again? Great! If you're not then <a href="https://alistapart.com/article/object-oriented-ux/" target="_blank" aria-label="Link to Sophia Prater's 2015 article about OOUX">Sophia Prater's 2015 article on OOUX</a> has a tonne of great examples - it's worth a read even if you are.</p>
+                </div>
+
+                <div class="row two-image-row">
+                    <div class="col-6 portfolio-image-container">
+                        <img class="full-width-portfolio-image" src="assets/img/gallery/Entity diagram.png">
+                    </div>
+                    <div class="col-6 portfolio-image-container">
+                        <img class="full-width-portfolio-image" src="assets/img/gallery/Nested Object Matrix.png">
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Should we just keep doing things the way we've always done them?</h2>
+                    <p>...was a question asked by the project lead. All this OOUX seemed like an awful lot of effort.</p>
+                    
+                    <p>We could absolutely have carried on doing things as they'd been done before, but if that 'norm' starts with the verbs, then things are probably going to be way more complicated than they need to be. Complication Costs. Lives (actually, it costs money, but it is an added stress that no project needs).</p>
+                    
+                    <p>Aside from helping us design and develop a great user experience, following an object-focused process has other benefits:
+                    
+                    <ul>
+                    <li><span class="list-start">Less guesswork = less risk</li> 
+                        <p>Using an object-orientated approach and OOUX's ORCA process you quickly establish any unknowns and minimise chances that something gets missed. Knowing exactly what you're dealing with allows you to make better decisions.</p>
+                    </li>
+                    <li><span class="list-start">Greater clarity = reduced cost</span>
+                        <p>If everyone's on the same page (objects agreed on) then projects can move forward more freely. It's also great from a product development perspective, as developers generally adhere to object-orientated methods. If everyone works with objects then we're all on the same page, and your dev team don't have to unpick designs to get started. This can save a lot of money.</p>
+                    </li>
+                    <li><span class="list-start">Greater clarity = scalability</span>
+                        <p>Object-orientated design is modular by nature, and modular design is fast, flexible, and scalable. Objects can be reused, and developers can add new features and modify existing ones without affecting the entire codebase.</p>
+                    </li>
+                </div>
+
+                <div>
+                    <h2>So, how did this process inform the re-design and migration of our content-heavy public resource?</h2>
+                    <p>Well, you've done well to bear with me this long (although hopefully it's been insightful too), so I'll treat you to an abridged version of why it was so important for this project.</p>
+    
+                    <ol>
+                    <li class="list-bullet">It helped us quickly and effectively identify what we were migrating (including the relationships between objects), and how that mapped to Local Gov Drupal's more rigid content types.</li>
+                    <li class="list-bullet">It allowed us to easily identify gaps in content and weed out redundant content.</li>
+                    <li class="list-bullet">It forced us to produce modular, scaleable content. Why was this so important? Because future teams of content writers and developers would have an easy task updating content and introducing new features.</li>
+                    <li class="list-bullet">It kept everyone - stakeholders, designers, developers - on the same page throughout the project. One big, happy family.</li>
+                    </ol>
+                </div>
+
             </div>
           
           </div>
 
-          <div class="col-lg-6">
-            <div class="portfolio-image-section">
-              <img class="portfolio-image" src="assets/img/gallery/cjh-casestudy.png">
-            </div>
-          </div>
-
         </div>
+        <div class="icon-footer">
+              <a href="case-study-three.html" class="btn" role="button" aria-pressed="true">
+                Next <i data-feather="arrow-right"></i>
+              </a>
+          </div>
       </div>
     </section><!-- End Gallery Single Section -->
 

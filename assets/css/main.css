@@ -875,13 +875,23 @@ color: var(--font-main);
 
 }
 
+.portfolio-image-container {
+  max-width: 90%;
+  padding: 30px;
+  max-height: 250px;
+  overflow: hidden;
+  margin: 75px 0;
+}
+
 .portfolio-image {
   @media (max-width: 994px) {
     display: none;
   }
 }
 
-
+.full-width-portfolio-image {
+  max-width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Service page
@@ -1118,6 +1128,23 @@ color: var(--font-main);
   justify-content: space-between;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   border-bottom:#d3d3d3 solid .3px;
+
+}
+
+.icon-footer {
+  display: inline-flex;
+  justify-content: flex-end;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  border-bottom:#d3d3d3 solid .3px;
+  
+  a {
+    border: 1px var(--color-secondary) solid;
+    border-radius: 7px;
+  }
+  
+  a:hover {
+    color: var(--color-primary);
+  }
 }
 
 .icon-header-tweak {
