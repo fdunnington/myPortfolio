@@ -853,8 +853,6 @@ color: var(--font-main);
 }
 
 .mobile-image {
-  width: 100%;
-  margin: 30px 0;
   
   @media (min-width: 995px) {
     display: none;
@@ -863,11 +861,10 @@ color: var(--font-main);
 }
 
 .horizontal-image-scroll {
-  padding-bottom: 30px;
+  margin: 30px;
   height: 300px;
   width: auto;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow: hidden;
 
   @media (min-width: 995px) {
     display: none;
@@ -880,7 +877,7 @@ color: var(--font-main);
   padding: 30px;
   max-height: 250px;
   overflow: hidden;
-  margin: 75px 0;
+  margin: 60px 0;
 }
 
 .portfolio-image {
@@ -1118,7 +1115,7 @@ color: var(--font-main);
   overflow: hidden;
 }
 
-.card h2 {
+.card-title {
   font-size: 18px;
   font-weight: bold;
 }
@@ -1141,7 +1138,7 @@ color: var(--font-main);
     border: 1px var(--color-secondary) solid;
     border-radius: 7px;
   }
-  
+
   a:hover {
     color: var(--color-primary);
   }
