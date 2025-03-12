@@ -1220,7 +1220,7 @@ color: var(--font-main);
 }
 
 
-.fade-in {
+.fadeInLeft {
   -webkit-animation: fadeInLeft 1.2s both;
   -moz-animation: fadeInLeft 1.2s both;
   -o-animation: fadeInLeft 1.2s both;
