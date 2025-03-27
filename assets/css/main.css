@@ -1135,6 +1135,10 @@ color: var(--font-main);
   overflow: hidden;
 }
 
+.left-align {
+  text-align: left;
+}
+
 .card-title {
   font-size: 18px;
   font-weight: bold;
@@ -1323,4 +1327,15 @@ color: var(--font-main);
   margin-right: 4px;
   border-radius: 8px;
   color: #000;
+}
+
+.case-studies {
+  display: flex-column;
+  justify-content: space-between;
+  height: stretch;
+  margin-bottom: 20px;
+}
+
+.link-look:hover {
+ color:#7000FF;
 }
