@@ -59,10 +59,10 @@ main {
 
 a {
   color: var(--color-primary);
-  text-decoration: none;
+  text-underline-position: under;
+  text-decoration-thickness: .5px;
+
 }
-
-
 
 a:hover {
   color: #9f02e7;
