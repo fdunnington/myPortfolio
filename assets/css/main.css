@@ -1433,3 +1433,7 @@ height: 100vh !important;
   border-radius: 50%;
   display: inline-block
 }
+
+.modal-content {
+  overflow-x: hidden;
+}
