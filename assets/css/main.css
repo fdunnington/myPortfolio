@@ -106,16 +106,12 @@ h2 {
   
 }
 
-.p {
-  font-size: 18px;
-  letter-spacing: .3px;
-}
 
 p,
 ul,
 li, 
 a {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: .3px;
 }
 
@@ -131,8 +127,6 @@ li {
 # Page Header
 --------------------------------------------------------------*/
 .page-header {
-  /* padding: 120px 0 60px 0; */
-  /* min-height: 20vh; */
   position: relative;
 }
 
@@ -192,6 +186,7 @@ li {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+/*
 #preloader {
   display: flex;
   position: fixed;
@@ -329,7 +324,7 @@ li {
     width: 0%;
   }
 }
-
+*/
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1147,9 +1142,8 @@ color: var(--font-main);
 .icon-header {
   display: inline-flex;
   justify-content: space-between;
-  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  /*padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);*/
   border-bottom:#d3d3d3 solid .3px;
-
 }
 
 .icon-footer {
