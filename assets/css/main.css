@@ -1380,10 +1380,17 @@ height: 100vh !important;
   background-position: center;
 }
 
-.project-image2 {
+.project-image-flex {
   height: 150px;
   width: auto;
-  background-image: url(assets/img/gallery/Criminal Justice Hub.png);
+  background-image: url(/assets/img/gallery/FlexiTog.png);
+  background-size: cover;
+  background-position: center;
+}
+.project-image-inghams {
+  height: 150px;
+  width: auto;
+  background-image: url(/assets/img/gallery/Inghams.png);
   background-size: cover;
   background-position: center;
 }
