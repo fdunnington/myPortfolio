@@ -1339,3 +1339,90 @@ color: var(--font-main);
 .link-look:hover {
  color:#7000FF;
 }
+
+
+/*MODALS*/
+
+.modal-overview {
+background-color: var(--color-default);
+color: #fff;
+}
+
+.modal-body { 
+  padding: 0;
+
+  .row {
+    padding: 20px;
+  }
+}
+
+.modal-dialog {
+height: 100vh !important;
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 0;
+
+}
+.modal-dialog-scrollable {
+height: 100vh !important;
+}
+
+.modal-dialog-scrollable .modal-body {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.project-image1 {
+  height: 150px;
+  width: auto;
+  background-image: url(/assets/img/gallery/cjh-horizontal.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-image2 {
+  height: 150px;
+  width: auto;
+  background-image: url(assets/img/gallery/Criminal Justice Hub.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bolded {
+  font-weight: 900;
+}
+
+.lightweight {
+    font-weight: 200;
+}
+
+.modal-row {
+ background-color: #eee;
+}
+
+.techstack {
+ background-color: #1D1A1A;
+
+ .pill {
+  background-color: #eae6e6;
+  color: rgb(0, 0, 0);
+ }
+}
+.news{
+  width: 160px
+}
+
+.news-scroll a {
+  text-decoration: none
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 2px !important;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block
+}
