@@ -1382,11 +1382,9 @@ height: 100vh !important;
   background-position: center;
 }
 .project-image-inghams {
-  height: 150px;
-  width: auto;
-  background-image: url(/assets/img/gallery/Inghams.png);
-  background-size: cover;
-  background-position: center;
+ margin: auto;
+ display: flex;
+ justify-content: center;
 }
 
 .bolded {
@@ -1430,4 +1428,10 @@ height: 100vh !important;
 
 .modal-content {
   overflow-x: hidden;
+}
+
+.modal-img {
+  width: 80%;
+  max-height: 100%;
+  padding: 32px 0;
 }
