@@ -82,6 +82,8 @@ li {
   line-height: 1.5em;
 }
 
+
+
 h1 {
   font-size: 32px;
   margin-bottom: 40px;
@@ -111,8 +113,8 @@ p,
 ul,
 li, 
 a {
-  font-size: 16px;
-  letter-spacing: .3px;
+  font-size: 1em;
+  letter-spacing: 0.02em;
 }
 
 li {
@@ -442,7 +444,6 @@ li {
 .header .logo i {
   font-size: 32px;
   margin-right: 8px;
-  line-height: 0;
 }
 
 @media (max-width: 575px) {
@@ -463,7 +464,6 @@ li {
   color: var(--color-default);
   padding-left: 15px;
   display: inline-block;
-  line-height: 0px;
   transition: 0.3s;
   font-size: 16px;
 }
@@ -521,7 +521,6 @@ li {
   .navbar a i,
   .navbar a:focus i {
     font-size: 12px;
-    line-height: 0;
     margin-left: 5px;
   }
 
@@ -651,7 +650,6 @@ li {
   .navbar a i,
   .navbar a:focus i {
     font-size: 12px;
-    line-height: 0;
     margin-left: 5px;
   }
 
@@ -681,7 +679,6 @@ li {
     color: var(--font-main);
     font-size: 28px;
     cursor: pointer;
-    line-height: 0;
     transition: 0.5s;
     z-index: 9999;
     margin: 0 10px 0 10px;
@@ -691,7 +688,6 @@ li {
     color: var(--font-main);
     font-size: 32px;
     cursor: pointer;
-    line-height: 0;
     transition: 0.5s;
     position: fixed;
     right: 20px;
