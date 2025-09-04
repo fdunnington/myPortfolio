@@ -1005,15 +1005,15 @@ color: var(--font-main);
 }
 
 .contact-socials {
-  display: flex;
-  flex-direction: row;
+  display: inline;
+flex-direction: row;
   width: 100%;
 }
 
 .card-body ul {
   list-style: none;
-            padding: 0;
-            margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .card-header {
@@ -1434,4 +1434,73 @@ height: 100vh !important;
   width: 80%;
   max-height: 100%;
   padding: 32px 0;
+}
+
+.figma-cards {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  width: 320px;
+  height: 220px;
+  background-color: rgb(244, 241, 247);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 32px;
+  color: rgb(233, 203, 252);
+
+}
+
+.figma-cards:hover {
+  text-decoration:underline;
+  border-bottom:#7000FF 4px solid;
+}
+
+.figma-cards h3 {
+  font-size: 18px;
+
+}
+
+.horizontal-scroll::before {
+  content: "<";
+  font-size: 32px;
+  height: 48px;
+  width: 48px;
+  margin: auto;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.horizontal-scroll::after {
+  content: ">";
+  font-size: 32px;
+  height: 48px;
+  width: 48px;
+  margin: auto;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.CTA {
+  background-color:var(--color-primary);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.CTA:hover {
+  color: white;
+}
+
+.figma-modal-figma {
+  background-color:white;
+  display: flex;
+   justify-content: center;
+}
+
+.figma-cards a {
+  color: rgb(54, 54, 54);
+  text-decoration: none;
 }
