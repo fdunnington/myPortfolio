@@ -44,10 +44,10 @@
       <a id="nav-item" href="index.html" aria-current="page" class="nav-item w-inline-block">
         <div class="nav-text home active">Home</div>
       </a>
-      <a id="nav-item" href="gallery.html" class="nav-item w-inline-block">
-        <div class="nav-text project inactive">Work</div>
+      <a id="nav-item" href="#my-work" class="nav-item w-inline-block">
+        <div class="nav-text project inactive">My Work</div>
       </a>
-      <a id="nav-item" href="contact.html" class="nav-item w-inline-block">
+      <a id="nav-item" href="#contact" class="nav-item w-inline-block">
         <div class="nav-text contact inactive">Contact</div>
       </a>
     </div>
@@ -57,52 +57,56 @@
   <main id="main">
     
       <!-- ======= Hero Section ======= -->
-      <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <h1>@fiD - Content & UX Design</span></h1>
-              <p>Design matters—not just how it looks, but how it works and how it makes you feel.</p>
-              <p>Human decisions are driven by emotions, and the best products spark the right feelings in their users. I use visual design, content structure, and copy to help businesses make their content easy to find and a joy to use.</p>
-              <p><a href="mailto:fi@fidunnington.com" aria-label="Let's chat about a project - send Fi an email">Let's chat about your project</a> and create something awesome together!</p>
+      <section class="container">
+        <div class="top-section-grid">
+
+            <div class="top-section-left">
+              <div class="about">
+                <div class="avatar">
+                  <img src="assets/img/gallery/avatar.png">
+                </div>
+                <div class="details">
+                  <h1 class="name">@fiD</span></h1>
+                  <h2 class="job-title">UX & Content Design</h2>
+                  <p class="location">Cornwall, UK</p>
+                </div>
+              </div>
               
+              <div class="contact-socials">
+                    <a class="social-icon" href="mailto:fi@fidunnington.com" target="_blank" aria-label="Send Fi an email"><i data-feather="mail" class="icon"></i></a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/fidunnington" target="_blank" aria-label="Visit Fi's Linked In profile"><i data-feather="linkedin" class="icon"></i></a>
+                    <a class="social-icon" href="https://dribbble.com/fi_dunnington" target="_blank" aria-label="Visit Fi's Dribbble profile"><i data-feather="dribbble" class="icon"></i></a>
+                    <a class="social-icon" href="https://github.com/fdunnington" target="_blank" aria-label="Visit Fi's GitHub profile"><i data-feather="github" class="icon"></i></a>
+              </div>
+
+              <div class="details">
+                <p>Design matters—not just how it looks, but how it works and how it makes you feel.</p>
+                <p>Human decisions are driven by emotions, and the best products spark the right feelings in their users. I use visual design, content structure, and copy to help businesses make their content easy to find and a joy to use.</p>
+              
+                <button type="button" class="btn btn-primary">Get in touch</button>
+              </div>
+
+
             </div>
+
+            <div class="top-section-right">
+              <h2>Things I do</h2>
+              <p>Select one to learn more about what it is, and how it can help your organisation</p>
+              <div class="pill">Visual design</div>
+              <div class="pill">Structural design</div>
+              <div class="pill">UX writing</div>
+              <div class="pill">Web accessiblity</div>
+            </div>
+          
           </div>
-        </div>
+
       </section><!-- End Hero Section -->
 
       <!-- ======= Gallery Section ======= -->
       <section class="container gallery-container">
             <div class="grid-container">
-              <div class="item1 card" data-aos="fade-down">
-                <div class="card-header">
-                  <h2 class="card-title">Things I do</h2>
-                </div>
-                <div class="card-body">
-                  <ul>
-                    <li>- UX Design</li>
-                    <li>- Content Design</li>
-                    <li>- Information Architecture</li>
-                    <li>- Wireframing & Prototyping</li>
-                    <li>- Web Design</li>
-                    <li>- UX Research</li>
-                    <li>- Web Accessibility Audits</li>
-                  </ul>
-                </div>
-
-                <div class="card contact-card contact-socials">
-                    <i data-feather="map-pin" aria-label="Fi's home location is "></i><span class="p">Cornwall, UK</span>
-                </div>
-                <div class="card contact-card contact-socials">
-                    <a href="mailto:fi@fidunnington.com" target="_blank" aria-label="Send Fi an email"><i data-feather="mail" class="icon"></i></a>
-                    <a href="https://www.linkedin.com/in/fidunnington" target="_blank" aria-label="Visit Fi's Linked In profile"><i data-feather="linkedin" class="icon"></i></a>
-                    <a href="https://dribbble.com/fi_dunnington" target="_blank" aria-label="Visit Fi's Dribbble profile"><i data-feather="dribbble" class="icon"></i></a>
-                    <a href="https://github.com/fdunnington" target="_blank" aria-label="Visit Fi's GitHub profile"><i data-feather="github" class="icon"></i></a>
-                </div>
-                
-              </div>
-
-              <div class="item2 card case-study" data-aos="fade-up">
+              
+              <div id="my-work" class="item1 card case-study" data-aos="fade-up">
                 <div class="card-header icon-header">
                   <h2 class="card-title">Managing content re-design at scale</h2>
                   <a href="case-study-two.html" class="btn" aria-label="View case study 1" role="link" aria-pressed="true">
@@ -114,7 +118,7 @@
                 </div>
               </div>
 
-              <div class="item3 card case-study" data-aos="fade-up">
+              <div class="item2 card case-study" data-aos="fade-up">
                 <div class="card-header icon-header">
                   <h2 class="card-title">Small Changes. Big Wins.</h2>
                   <a href="case-study-three.html" class="btn" aria-label="View case study 2" role="link" aria-pressed="true">
@@ -126,7 +130,7 @@
                 </div>
               </div>  
 
-              <div class="item4 card case-study" data-aos="fade-up">
+              <div class="item3 card case-study" data-aos="fade-up">
                 <div class="card-header icon-header">
                   <h2 class="card-title">Words Matter</h2>
                     <a href="case-study-one.html" class="btn" aria-label="View case study 3" role="link" aria-pressed="true">
@@ -137,8 +141,38 @@
                     <p class="card-text">Writing for clarity and an improved user experience</p>
                 </div>
               </div>
+              
+              <div class="item4 card" data-aos="fade-left">
+                <div class="icon-header">
+                  <h2 class="card-title"><i data-feather="figma" class="icon"></i> Figma design & prototyping </h2>
+                </div>
+                
+                <div class="left-align">
+                  <p>My go-to design tool for UI design is Figma. I can help you with design systems, wireframes, responsive UI design, and prototyping.</p>
+                  <button type="button" class="btn btn-secondary">Explore my Figma</button>
+                
+                  <div class="card-img" style="max-height:400px; overflow: hidden;">
+                    <img src="assets/img/gallery/Figma.png" style="max-height:auto; width: 100%;">
+                  </div>
+                </div>
+              </div>
 
-              <div class="item5">
+              <div id="contact" class="item5 card" data-aos="fade-right">
+                <div class="card-body">
+                  <h2>Get in touch</h2>
+                  <p>Aren’t sure what would help improve your organisation’s digital products? I’m always happy to answer questions. No strings.</p>
+
+
+                  <div class="contact-buttons">
+                    <button type="button" class="btn btn-primary"><i data-feather="mail" class="icon"></i> fi@fidunnington.com</button> 
+                    <button type="button" class="btn btn-primary"><i data-feather="message-circle" class="icon"></i> +44 (0)7481 844 007</button>             
+                  </div>
+                                    
+                  
+                </div>
+              </div>
+              
+              <div class="item6">
                 
                 <div class="icon-header icon-header-tweak">
                   <a href="https://www.figma.com/proto/EWmMR4eDDptXp3byR9VRpl/TOTW?page-id=0%3A1&node-id=1-257&node-type=CANVAS&viewport=456%2C474%2C0.16&t=HYSj9yezQuQidCfw-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="btn" aria-label="Tweek Of The Week - Recent design tweaks for big hitters played out in Figma" role="button" aria-pressed="true">
@@ -151,27 +185,9 @@
                   </a>    
             
     
-                </div>
-
-              <div class="item6 card">
-                <div class="icon-header">
-                  <a href="https://www.figma.com/proto/S5PUgeSxiuEYgORyPoVkbZ/Design-and-process?page-id=1%3A6&node-id=11-3133&node-type=FRAME&viewport=549%2C513%2C0.02&t=kX1WmonO183QWkc6-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=11%3A3133" target="_blank" class="btn" aria-label="Figma design & prototyping" role="button" aria-pressed="false">
-                    <span class="left-align">
-                      
-                      <h2 class="card-title"><i data-feather="figma" class="icon"></i> Figma design & prototyping </h2>
-                      <p>My go-to design tool for UI design is Figma. I can help you with design systems, wireframes, responsive UI design, and prototyping.</p>
-                      <p class="link-look">Take a look at some of my designs >></p>
-                    </span>
-                  </a>
-
-                  <a href="https://www.figma.com/proto/S5PUgeSxiuEYgORyPoVkbZ/Design-in-process?page-id=1%3A6&node-id=11-3133&viewport=1033%2C1681%2C0.48&t=5thsUKQs4udTB5HQ-1&scaling=scale-down-width&content-scaling=fixed" target="_blank" class="btn" aria-label="Go to Fi's Figma profile" role="button" aria-pressed="true">
-                   
-                  </a>        
-                </div>
-                <div class="card-body" style="max-height:400px; overflow: scroll;">
-                  <img src="assets/img/gallery/Figma.png" style="max-height:auto; width: 100%;">
-                </div>
               </div>
+
+            
             </div>
       </section>
 
