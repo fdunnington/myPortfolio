@@ -1111,13 +1111,17 @@ i {
   display: inline-flex;
   justify-content: space-between;
   border-bottom:#d3d3d3 solid .3px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .icon-footer {
   display: inline-flex;
   justify-content: flex-end;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  border-bottom:#d3d3d3 solid .3px;
+  border-top:#d3d3d3 solid .3px;
+  margin-top: 16px;
+  padding-top: 16px;
   
   a {
     border: 1px var(--color-primary) solid;
