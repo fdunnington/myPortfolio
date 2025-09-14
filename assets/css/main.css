@@ -36,7 +36,7 @@
   --font-main: #1D1A1A;
   --inset-box: inset rgba(244, 240, 249, 1) 0 0 60px 10px;
   --box-shadow: /*rgba(107, 0, 107, 0.6) 20px 20px 60px 60px*/ rgba(212, 221, 235, 0.75) 4px 4px 4px 0px;
-
+  --highlight: #ffd67f;
 }
 
 /* Smooth scroll behavior */
@@ -63,12 +63,17 @@ a {
   color: var(--color-primary);
   text-underline-position: under;
   text-decoration-thickness: .5px;
-
 }
 
 a:hover {
+  /*background-color: var(--highlight);*/
   color: #9f02e7;
   text-decoration: none;
+}
+
+a:focus {
+  outline: 2px solid var(--color-primary);
+  color: var(--font-main);
 }
 
 h1,
@@ -123,17 +128,14 @@ li {
 
 .icon:hover {
   color: var(--color-primary);
-}
-
-.btn {
-  padding: 8px 32px;
+  background-color: ;
 }
 
 .btn-primary {
   background-color: var(--color-primary);
+  border: var(--color-primary) 2px solid !important;
   color: var(--default-light);
   float: left;
-  width: 300px;
 }
 
 .btn-secondary {
@@ -141,6 +143,58 @@ li {
   border: var(--color-primary) 2px solid !important;
   color: var(--color-primary);
 }
+
+.btn {
+  padding: 8px 32px;
+}
+
+.btn:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: .2em;
+}
+
+.btn:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: .2em;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: none;
+}
+
+.btn-check:focus+.btn-secondary, .btn-secondary:focus {
+    box-shadow: none;
+}
+
+.btn:hover {
+  background-color: var(--highlight);
+  border: var(--color-primary) 2px solid !important;
+  color: var(--font-main);
+}
+
+i:hover {
+  background-color: var(--highlight);
+  color: var(--font-main);
+}
+
+button:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: .2em;
+
+}
+
+.tweak:hover {
+  color: var(--font-main) !important;
+}
+
+.btn-secondary:focus {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
 
 /*--------------------------------------------------------------
 # Page Header
@@ -234,35 +288,47 @@ li {
 }
 
 .nav-item {
-  width: 112px;
+  width: 108px;
   height: 44px;
-  border-radius: 230px;
+  border-radius: 50px;
   justify-content: center;
   align-items: center;
-  padding: 12px 24px;
+  padding: 12px 8px;
   display: flex;
+  background-color: transparent;
+}
+
+.nav-text {
+  color: var(--font-main);
+}
+
+.nav-text:hover {
+  color: var(--font-primary);
 }
 
 .active {
   z-index: -1;
-  width: 112px;
+  color: var(--color-primary);
+  width: 108px;
   height: 44px;
+  border-radius: 50px;
   background-color: #f2f2f2;
-  border-radius: 230px;
+  border-radius: 50px;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.floating-indicator {
+
+/*.floating-indicator {
   z-index: -1;
-  width: 112px;
+  width: 108px;
   height: 44px;
   background-color: #f2f2f2;
   border-radius: 230px;
   position: absolute;
-}
+}*/
 
 
 @media screen and (max-width: 767px) {
@@ -280,17 +346,12 @@ li {
 
 @media screen and (max-width: 479px) {
   .nav-item, .nav-item.w--current, .floating-indicator {
-      width: 88px;
-      height: 40px;
+    width: 108px;
+    height: 44px;
+
   }
 }
 
-@media screen and (max-width: 479px) {
-  .nav-item, .nav-item.w--current, .floating-indicator {
-      width: 88px;
-      height: 40px;
-  }
-}
 
 .header {
   transition: all 0.5s;
@@ -342,9 +403,10 @@ li {
   font-size: 16px;
 }
 
+/*
 .header .header-social-links a:hover {
   color: var(--color-primary);
-}
+}*/
 
 @media (max-width: 575px) {
   .header .header-social-links a {
@@ -390,6 +452,7 @@ li {
     color: var(--font-main);
     white-space: nowrap;
     transition: 0.3s;
+    background-color: transparent;
   }
 
   .navbar a i,
@@ -521,11 +584,28 @@ li {
     transition: 0.3s;
   }
 
-  .navbar a i,
+  /*.navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--font-main);
+    white-space: nowrap;
+    transition: 0.3s;
+    background-color: transparent;
+  }*/
+
+  /*.navbar a i,
   .navbar a:focus i {
     font-size: 12px;
     margin-left: 5px;
-  }
+  }*/
 
   .navbar a:hover,
   .navbar .active,
@@ -534,7 +614,7 @@ li {
     color: var(--font-main);
   }
 
-  .navbar .dropdown ul,
+  /*.navbar .dropdown ul,
   .navbar .dropdown .dropdown ul {
     position: static;
     display: none;
@@ -583,7 +663,7 @@ li {
     inset: 0;
     background: rgba(22, 23, 24, 0.8);
     z-index: 9996;
-  }
+  }*/
 }
 /*--------------------------------------------------------------
 # Home
@@ -727,8 +807,9 @@ align-items: center;
 
 .inline-stats-row {
   display: flex;
-  margin-top: -40px;
+  /*margin-top: -40px;*/
   margin-bottom: 40px;
+  color: var(--smoke);
 }
 
 .inline-stats {
@@ -801,9 +882,8 @@ align-items: center;
   margin-top: 40px;
 }
 
-.contact-buttons {
-  display: inline;
-
+.contact-button {
+  margin-right: 16px
 }
 
 .info-item {
@@ -859,8 +939,12 @@ align-items: center;
 .card-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+}
+
+.card-header h2 {
+  font-size: 14px;
+  color: #595b5d;
 }
 
 .card-body ul {
@@ -873,6 +957,29 @@ align-items: center;
   background-color: transparent;
   border: none;
 }
+
+.card-img {
+ display: flex;
+ justify-content: center;
+ align-items: center;;
+}
+
+.card-img img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-footer {
+  background-color: #fff;
+  font-size: 14px;
+  text-align: right;
+}
+
 .social-icon {
   background-color: #fff;
   text-align: center;
@@ -970,6 +1077,13 @@ i {
   background-color: transparent;
 }
 
+.top-section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  background-color: transparent;
+}
+
 .card {
   background-color: #fff;
   text-align: left;
@@ -986,7 +1100,7 @@ i {
 
 .card-title {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .card-img {
@@ -1006,7 +1120,7 @@ i {
   border-bottom:#d3d3d3 solid .3px;
   
   a {
-    border: 1px var(--color-secondary) solid;
+    border: 1px var(--color-primary) solid;
     border-radius: 7px;
   }
 
@@ -1015,9 +1129,10 @@ i {
   }
 }
 
-.icon-header-tweak {
-  display: flex;
-  flex-direction: column;
+.tweak {
+  padding: 32px;
+  text-decoration: none;
+  color: var(--color-default);
   text-align: center;
 }
 
@@ -1031,7 +1146,6 @@ i {
 
 @media only screen and (min-width: 978px) {
   .top-section-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 32px;
     row-gap: 100px;
@@ -1047,7 +1161,6 @@ i {
   }
 
   .grid-container {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
   }
@@ -1093,14 +1206,28 @@ i {
 
 }
 
+@media only screen and (max-width: 977px) {
+  .btn {
+    width: 100%;
+  }
+
+  .contact-button {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+}
+
+
 @media only screen and (max-width: 600px) {
-  .item5 {
+  /*.item5 {
     border-top: 6px solid var(--color-primary);
     border-bottom: 6px solid var(--color-primary);
     padding: 20px 0;
-  }
+  }*/
   
 }
+
 
 
 .fadeInLeft {
@@ -1208,6 +1335,7 @@ i {
   color: var(--smoke);
   text-align: center;
 }
+*/
 
 .case-studies {
   display: flex-column;
@@ -1220,12 +1348,22 @@ i {
  color:#7000FF;
 }
 
-
 /*MODALS*/
+
+.modal {
+  z-index:9999;
+  height: 100vh;
+  bottom: 0;
+  overflow: scroll;
+}
 
 .modal-overview {
 background-color: var(--color-default);
 color: #fff;
+}
+
+.modal-trigger:hover {
+    background-color: var(--highlight);
 }
 
 .modal-body { 
@@ -1243,17 +1381,17 @@ margin-top: 0;
 margin-bottom: 0;
 
 }
-.modal-dialog-scrollable {
-height: 100vh !important;
+/*.modal-dialog-scrollable {
+  height: 100vh !important;
 }
 
 .modal-dialog-scrollable .modal-body {
     overflow-y: auto;
     height: 100vh;
-}
+}*/
 
 .project-image1 {
-  height: 150px;
+  /*height: 150px;*/
   width: auto;
   background-image: url(/assets/img/gallery/cjh-horizontal.png);
   background-size: cover;

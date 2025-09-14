@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>.fiDunnington</title>
-  <meta content="UX and Content Designer specialised in the organisation of complex content." name="description">
+  <meta content="UX and Content Designer specialising in web accessiblity and organisation of complex content." name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -41,8 +41,8 @@
   <!-- ======= NEW Header ======= -->
   <nav class="nav-fixed">
     <div class="nav">
-      <a id="nav-item" href="index.html" aria-current="page" class="nav-item w-inline-block">
-        <div class="nav-text home active">Home</div>
+      <a id="nav-item" href="#about-me" aria-current="page" class="nav-item w-inline-block">
+        <div class="nav-text home active">About me</div>
       </a>
       <a id="nav-item" href="#my-work" class="nav-item w-inline-block">
         <div class="nav-text project inactive">My Work</div>
@@ -58,12 +58,12 @@
     
       <!-- ======= Hero Section ======= -->
       <section class="container">
-        <div class="top-section-grid">
+        <div id="about-me" class="top-section-grid">
 
             <div class="top-section-left">
               <div class="about">
                 <div class="avatar">
-                  <img src="assets/img/gallery/avatar.png">
+                  <img src="assets/img/gallery/avatar.png" alt="a picture of Fi Dunnington" >
                 </div>
                 <div class="details">
                   <h1 class="name">@fiD</span></h1>
@@ -73,7 +73,6 @@
               </div>
               
               <div class="contact-socials">
-                    <a class="social-icon" href="mailto:fi@fidunnington.com" target="_blank" aria-label="Send Fi an email"><i data-feather="mail" class="icon"></i></a>
                     <a class="social-icon" href="https://www.linkedin.com/in/fidunnington" target="_blank" aria-label="Visit Fi's Linked In profile"><i data-feather="linkedin" class="icon"></i></a>
                     <a class="social-icon" href="https://dribbble.com/fi_dunnington" target="_blank" aria-label="Visit Fi's Dribbble profile"><i data-feather="dribbble" class="icon"></i></a>
                     <a class="social-icon" href="https://github.com/fdunnington" target="_blank" aria-label="Visit Fi's GitHub profile"><i data-feather="github" class="icon"></i></a>
@@ -83,19 +82,17 @@
                 <p>Design matters—not just how it looks, but how it works and how it makes you feel.</p>
                 <p>Human decisions are driven by emotions, and the best products spark the right feelings in their users. I use visual design, content structure, and copy to help businesses make their content easy to find and a joy to use.</p>
               
-                <button type="button" class="btn btn-primary">Get in touch</button>
+                <a href="mailto:fi@fidunnington.com" class="btn btn-primary">Get in touch</a>
               </div>
-
 
             </div>
 
             <div class="top-section-right">
               <h2>Things I do</h2>
-              <p>Select one to learn more about what it is, and how it can help your organisation</p>
-              <div class="pill">Visual design</div>
-              <div class="pill">Structural design</div>
-              <div class="pill">UX writing</div>
-              <div class="pill">Web accessiblity</div>
+              <button type="button" class="pill modal-trigger" aria-haspopup="dialog" data-bs-toggle="modal" data-bs-target="#visual-design">Visual design</button>
+              <button type="button" class="pill modal-trigger" aria-haspopup="dialog" data-bs-toggle="modal" data-bs-target="#structural-design">Structural design</button>
+              <button type="button" class="pill modal-trigger" aria-haspopup="dialog" data-bs-toggle="modal" data-bs-target="#ux-writing">UX writing</button>
+              <button type="button" class="pill modal-trigger" aria-haspopup="dialog" data-bs-toggle="modal" data-bs-target="#web-accessibility">Web accessiblity</button>
             </div>
           
           </div>
@@ -108,51 +105,62 @@
               
               <div id="my-work" class="item1 card case-study" data-aos="fade-up">
                 <div class="card-header icon-header">
-                  <h2 class="card-title">Managing content re-design at scale</h2>
-                  <a href="case-study-two.html" class="btn" aria-label="View case study 1" role="link" aria-pressed="true">
-                    <i data-feather="maximize-2" class="icon"></i>
-                  </a>
+                  <h2 class="card-title">Case study</h2>
                 </div>
                 <div class="card-body">
-                  <p class="card-text">Object Orientated UX (OOUX)</p>
+                  <h3 class="card-title">Managing content re-design at scale</h3>
+                  <p class="card-text">Using Object Orientated UX (OOUX) to organise complexity.</p>
                 </div>
+                <div class="card-footer">                  
+                  <a href="case-study-two.html" aria-label="Read case study 1">
+                    Read more <i data-feather="arrow-right" aria-hidden="true" class="icon"></i>
+                  </a>
+                </div>
+
               </div>
 
               <div class="item2 card case-study" data-aos="fade-up">
                 <div class="card-header icon-header">
-                  <h2 class="card-title">Small Changes. Big Wins.</h2>
-                  <a href="case-study-three.html" class="btn" aria-label="View case study 2" role="link" aria-pressed="true">
-                    <i data-feather="maximize-2" class="icon"></i>
-                  </a>
+                  <h2 class="card-title">Case study.</h2>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Considering your UX doesn't mean slowing down the process or blowing the budget</p>
+                    <h3 class="card-title">Small Changes. Big Wins.</h3>
+                    <p class="card-text">UX doesn't have to slow the process or blow the budget.</p>
+                </div>
+                <div class="card-footer">                  
+                  <a href="case-study-three.html" aria-label="Read case study 2">
+                    Read more <i data-feather="arrow-right" aria-hidden="true" class="icon"></i>
+                  </a>
                 </div>
               </div>  
 
               <div class="item3 card case-study" data-aos="fade-up">
                 <div class="card-header icon-header">
-                  <h2 class="card-title">Words Matter</h2>
-                    <a href="case-study-one.html" class="btn" aria-label="View case study 3" role="link" aria-pressed="true">
-                      <i data-feather="maximize-2" class="icon"></i>
-                    </a>
+                  <h2 class="card-title">Case study</h2>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Writing for clarity and an improved user experience</p>
+                    <h3 class="card-title">Words Matter</h3>
+                    <p class="card-text">Writing for clarity and an improved user experience.</p>
                 </div>
+                <div class="card-footer">                  
+                  <a href="case-study-one.html" aria-label="Read case study 3">
+                    Read more <i data-feather="arrow-right" aria-hidden="true" class="icon"></i>
+                  </a>
+                </div>
+
               </div>
               
               <div class="item4 card" data-aos="fade-left">
                 <div class="icon-header">
-                  <h2 class="card-title"><i data-feather="figma" class="icon"></i> Figma design & prototyping </h2>
+                  <h2 class="card-title"><i data-feather="figma" class="icon" aria-hidden="true"></i > Figma design & prototyping </h2>
                 </div>
                 
                 <div class="left-align">
                   <p>My go-to design tool for UI design is Figma. I can help you with design systems, wireframes, responsive UI design, and prototyping.</p>
-                  <button type="button" class="btn btn-secondary">Explore my Figma</button>
+                  <a href="https://www.figma.com/proto/S5PUgeSxiuEYgORyPoVkbZ/Design-and-process?node-id=36-4154&p=f&t=UoQgKKK1LrqPai40-0&scaling=min-zoom&content-scaling=fixed&page-id=1%3A6" target="_blank" class="btn btn-secondary">Explore my Figma</a>
                 
-                  <div class="card-img" style="max-height:400px; overflow: hidden;">
-                    <img src="assets/img/gallery/Figma.png" style="max-height:auto; width: 100%;">
+                  <div class="card-img">
+                    <img src="assets/img/gallery/Figma.png" alt="An image showing some of Fi's website designs in Figma. Larger versions of the designs can be seen in Fi's Figma" style="max-height:auto; width: 100%;">
                   </div>
                 </div>
               </div>
@@ -162,38 +170,197 @@
                   <h2>Get in touch</h2>
                   <p>Aren’t sure what would help improve your organisation’s digital products? I’m always happy to answer questions. No strings.</p>
 
-
-                  <div class="contact-buttons">
-                    <button type="button" class="btn btn-primary"><i data-feather="mail" class="icon"></i> fi@fidunnington.com</button> 
-                    <button type="button" class="btn btn-primary"><i data-feather="message-circle" class="icon"></i> +44 (0)7481 844 007</button>             
+                  <div class="">
+                  <a href="mailto:fi@fidunnington.com" role="button" class="btn btn-primary contact-button"><i data-feather="mail"></i> fi@fidunnington.com</a> 
+                  <a href="tel:00447481844007" role="button" class="btn btn-primary contact-button"><i data-feather="message-circle"></i> +44 (0)7481 844 007</a>             
                   </div>
                                     
                   
                 </div>
               </div>
               
-              <div class="item6">
-                
-                <div class="icon-header icon-header-tweak">
-                  <a href="https://www.figma.com/proto/EWmMR4eDDptXp3byR9VRpl/TOTW?page-id=0%3A1&node-id=1-257&node-type=CANVAS&viewport=456%2C474%2C0.16&t=HYSj9yezQuQidCfw-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="btn" aria-label="Tweek Of The Week - Recent design tweaks for big hitters played out in Figma" role="button" aria-pressed="true">
-                    <i data-feather="figma" class="icon"></i>
-                  <h2 class="card-title">Tweak of the Week</h2>
-                  <p>Recent design tweaks for big hitters played out in Figma</p>                           
-                   
-                </div>
-                  <img src="assets/img/gallery/Clio Logo.png" style="max-height:400px; width: 100%;" aria-label="Click to see this in Figma">
-                  </a>    
-            
-    
-              </div>
-
-            
+              <a href="https://www.figma.com/proto/EWmMR4eDDptXp3byR9VRpl/TOTW?page-id=0%3A1&node-id=1-257&node-type=CANVAS&viewport=456%2C474%2C0.16&t=HYSj9yezQuQidCfw-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="item6 tweak">
+                <i data-feather="figma" aria-hidden="true"></i>
+                <h2 class="card-title">Tweak of the Week</h2>
+                <p>Design tweaks for big hitters played out in Figma</p>                           
+                <img src="assets/img/gallery/Clio Logo.png" alt="" style="max-height:300px; width: 100%;">
+              </a>    
             </div>
       </section>
 
   </main>
 
 <!-- Modal -->
+  <div class="modal fade" id="visual-design" tabindex="-1" aria-labelledby="VisualDesignLabel" aria-hidden="true" aria-modal="true">
+    <div class="modal-dialog modal-dialog-scrollable case-study-modal">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button role="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row modal-overview">
+              <h1 class="modal-title fs-5" id="VisualDesignLabel">Visual Design</h1>
+              <p class="lightweight">Everything about how it looks</p>            
+            </div>
+            <div class="row modal-row story-so-far">
+              <h2 class="col-4 card-title">
+                What visual design involves:
+              </h2>
+              <div class="col-8">
+                <p>Creating the visual style of a product or website, including layout, colour palettes, typography, imagery, and iconography. It's about establishing a consistent look and feel that communicates the brand and makes content easy to digest.</p>
+                <p>Visual design can range from high-level style guides to detailed mockups, depending on the project’s scope and complexity.</p>
+              </div>
+            </div>
+            <div>
+              <img class="modal-img" src="assets/img/gallery/UI.png" alt="">
+            </div>
+            <div class="row modal-row">
+              <h2 class="col-4 card-title">
+                When and why it's important:
+              </h2>
+              <div class="col-8">
+                <p>Visual design shapes how users perceive a product. It builds trust, reinforces brand identity, and improves comprehension of content. Investing time in this stage ensures that design choices are intentional and accessible, avoiding rework later in development. Strong visual design also supports usability by guiding users’ attention to the most important information.</p>
+              </div>
+            </div>
+
+            <div class="row modal-row">
+              <a role="button" href="mailto:fi@fidunnington.com" class="modal-CTA btn btn-primary">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="structural-design" tabindex="-1" aria-labelledby="StructuralDesignLabel" aria-hidden="true" aria-modal="true">
+      <div class="modal-dialog modal-dialog-scrollable case-study-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button role="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row modal-overview">
+                <h1 class="modal-title fs-5" id="StructuralDesignLabel">Structural Design</h1>
+                <p class="lightweight">The blueprint, and how it all fits together</p>            
+              </div>
+              <div class="row modal-row story-so-far">
+                <h2 class="col-4 card-title">
+                  What structural design involves:
+                </h2>
+                <div class="col-8">
+                  <p>Defining the hierarchy and layout of content, navigation, and interactive elements. This includes sitemaps, content grouping, and functional flows that show how different pieces relate to each other.</p>
+                  <p>Structural design can range from rough sketches of page layouts to more detailed diagrams of user journeys, depending on complexity and project needs.</p>
+                </div>
+              </div>
+              <div>
+                <img class="modal-img" src="assets/img/gallery/UI.png" alt="">
+              </div>
+              <div class="row modal-row">
+                <h2 class="col-4 card-title">
+                  When and why it's important:
+                </h2>
+                <div class="col-8">
+                  <p>A clear structure helps users understand a product or website quickly and navigate it efficiently. It prevents confusion, reduces cognitive load, and ensures that content and features are discoverable.</p>
+                  <p>Spending time on structural design upfront makes development smoother and allows testing of user flows before committing to build.</p>
+                </div>
+              </div>
+
+              <div class="row modal-row">
+                <a role="button" href="mailto:fi@fidunnington.com" class="modal-CTA btn btn-primary">Get in touch</a>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="ux-writing" tabindex="-1" aria-labelledby="UXWritingLabel" aria-hidden="true" aria-modal="true">
+      <div class="modal-dialog modal-dialog-scrollable case-study-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button role="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row modal-overview">
+                <h1 class="modal-title fs-5" id="UXWritingLabel">UX Writing</h1>
+                <p class="lightweight">Words really do matter</p>            
+              </div>
+              <div class="row modal-row story-so-far">
+                <h2 class="col-4 card-title">
+                  What UX writing involves:
+                </h2>
+                <div class="col-8">
+                  <p>Writing clear, concise, and helpful text that appears within a product, from buttons and labels to notifications and error messages. The goal is to make interactions intuitive and reinforce the product’s tone of voice.</p>
+                  <p>UX writing can range from small copy snippets to detailed content frameworks, depending on the number of user touchpoints and complexity of interactions.</p>
+                </div>
+              </div>
+              <div>
+                <img class="modal-img" src="assets/img/gallery/UI.png" alt="">
+              </div>
+              <div class="row modal-row">
+                <h2 class="col-4 card-title">
+                  When and why it's important:
+                </h2>
+                <div class="col-8">
+                  <p>Words are part of the user interface. Well-written copy reduces confusion, guides actions, and improves overall experience.</p>
+                  <p>Investing in UX writing ensures messages are consistent, understandable, and accessible, and can prevent unnecessary frustration for users. Clear copy at this stage also helps avoid last-minute rewrites during development.</p>
+                </div>
+              </div>
+
+              <div class="row modal-row">
+                <a role="button" href="mailto:fi@fidunnington.com" class="modal-CTA btn btn-primary">Get in touch</a>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="web-accessibility" tabindex="-1" aria-labelledby="WebAccessiblityLabel" aria-hidden="true" aria-modal="true">
+      <div class="modal-dialog modal-dialog-scrollable case-study-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button role="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row modal-overview">
+              <h1 class="modal-title fs-5" id="WebAccessiblityLabel">Web Accessibility</h1>
+              <p class="lightweight">Reaching as many people as possible</p>
+              </div>
+              <div class="row modal-row story-so-far">
+                <h2 class="col-4 card-title">
+                  What web accessibility involves:
+                </h2>
+                <div class="col-8">
+                  <p>Ensuring that websites and products can be accessed and used by people with a wide range of abilities, including those with visual, auditory, motor, or cognitive impairments. This includes considerations such as colour contrast, keyboard navigation, screen reader compatibility, and clear content structure.</p>
+                  <p>Accessibility measures can range from basic checks to detailed audits and testing with assistive technologies, depending on the project’s scale and audience.</p>
+                </div>
+              </div>
+              <div>
+                <img class="modal-img" src="assets/img/gallery/DESIGN/" alt="">
+              </div>
+              <div class="row modal-row">
+                <h2 class="col-4 card-title">
+                  When and why it's important:
+                </h2>
+                <div class="col-8">
+                  <p>Accessible design ensures equal access to information and functionality, which is both ethically responsible and often legally required. It improves usability for all users, not just those with disabilities, and can prevent costly fixes after launch.</p>
+                  <p>Prioritising accessibility from the start allows for a smoother, more inclusive design and development process.</p>
+                </div>
+              </div>
+
+              <div class="row modal-row">
+                <a role="button" href="mailto:fi@fidunnington.com" class="modal-CTA btn btn-primary">Get in touch</a>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="container-fluid footer">
@@ -206,20 +373,22 @@
 
 
 
-    <!-- Vendor JS Files -->
-    
+  <!-- Vendor JS Files -->
+
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
 
-    <!-- Feather JS Files -->
-    <script>
-      feather.replace();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Feather JS Files -->
+  <script>feather.replace();</script>
+
+  <!-- Bootstrap JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 
 
