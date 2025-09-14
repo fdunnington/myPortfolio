@@ -1015,8 +1015,13 @@ i {
 .pill {
  margin: 8px;
  box-shadow: var(--box-shadow);
+ font-size: 14px;
+ font-weight: 600;
 }
 
+.pill-pot {
+  margin: 32px 0;
+}
 
 @-webkit-keyframes animate-loading {
   0% {
