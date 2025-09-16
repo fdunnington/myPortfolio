@@ -950,7 +950,7 @@ align-items: center;
   justify-content: space-evenly;
   background-color: #fff;
   text-align: left;
-  padding: 2%;
+  padding: 6%;
   box-shadow: var(--box-shadow);
   border-radius: 7px;
   border: none;
@@ -997,7 +997,8 @@ align-items: center;
 
 .card-footer {
   background-color: #fff;
-  font-size: 14px;
+  font-size: 14px; 
+  font-weight: 600;
   text-align: right;
 }
 
