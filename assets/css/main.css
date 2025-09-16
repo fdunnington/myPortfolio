@@ -92,6 +92,7 @@ li {
 h1 {
   font-size: 32px;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 h2 {
@@ -937,11 +938,24 @@ align-items: center;
   
 }
 
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  text-align: left;
+  padding: 2%;
+  box-shadow: var(--box-shadow);
+  border-radius: 7px;
+  border: none;
+  overflow: hidden;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 
 .card-header h2 {
   font-size: 14px;
@@ -970,9 +984,8 @@ align-items: center;
   overflow: hidden;
 }
 
-.card {
-  display: flex;
-  justify-content: space-evenly;
+.case-study-card {
+  padding: 10%;
 }
 
 .card-footer {
@@ -1088,16 +1101,6 @@ i {
   grid-template-columns: 1fr;
   gap: 30px;
   background-color: transparent;
-}
-
-.card {
-  background-color: #fff;
-  text-align: left;
-  padding: 2%;
-  box-shadow: var(--box-shadow);
-  border-radius: 7px;
-  border: none;
-  overflow: hidden;
 }
 
 .left-align {
