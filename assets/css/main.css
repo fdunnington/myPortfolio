@@ -700,10 +700,10 @@ button:focus {
     min-height: 90vh;
     margin: 50px auto;
   }
-
+/*
   .case-study {
     transform: rotate(2deg);
-  }
+  }*/
 
   .info-box-one {
     transform: rotate(2deg);
@@ -870,8 +870,9 @@ align-items: center;
 .portfolio-image-container {
   max-height: 400px;
   overflow: hidden;
-  margin: 50px 0;
+  margin: 2.5%;
 }
+
 
 .portfolio-image {
   @media (max-width: 994px) {
@@ -883,7 +884,31 @@ align-items: center;
   max-width: 100%;
 }
 
+.full-height-img {
+  max-height: 500px;
+}
 
+
+
+.case-study-row {
+  margin-bottom: 50px;
+}
+
+.caption {
+  font-style: italic;
+  color:#595b5d;
+  font-size:14px;
+}
+
+#stage-1 {
+  background-color: #ebe9e9;
+  padding: 64px 32px;
+}
+
+#stage-3 {
+  background-color: #ebe9e9;
+  padding: 64px 32px;
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -955,6 +980,10 @@ align-items: center;
   border-radius: 7px;
   border: none;
   overflow: hidden;
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow);
 }
 
 .card-body {
@@ -1046,6 +1075,7 @@ i {
   margin: 32px 0;
 }
 
+/*
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1064,7 +1094,7 @@ i {
   100% {
     transform: rotate(360deg);
   }
-}
+}*/
 
 
 /*--------------------------------------------------------------
