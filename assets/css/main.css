@@ -307,11 +307,11 @@ button:focus {
 
 .nav-text:hover {
   color: var(--font-primary);
-
 }
 
 .active {
-  color: var(--color-primary);
+  color: var(--dark-primary);
+  font-weight:bold;
   width: 108px;
   height: 44px;
   border-radius: 50px;
