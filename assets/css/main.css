@@ -756,11 +756,6 @@ color: var(--font-main);
   color: var(--font-default);
 }
 
-.case-study-two-image {
-  background-image: url("../img/gallery/cjh.png");
-  background-size: cover;
-  background-position: center top;
-}
 
 .case-study-three-image {
   background-image: url("../img/gallery/FlexiTog.png");
@@ -887,8 +882,6 @@ align-items: center;
 .full-height-img {
   max-height: 500px;
 }
-
-
 
 .case-study-row {
   margin-bottom: 50px;
