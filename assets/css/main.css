@@ -705,6 +705,7 @@ button:focus {
     transform: rotate(2deg);
   }*/
 
+
   .info-box-one {
     transform: rotate(2deg);
     z-index: 3;
@@ -975,6 +976,24 @@ align-items: center;
   overflow: hidden;
 }
 
+.item3 {
+  background-color:#130526;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+}
+
+.item3 .card-title {
+  color:#d1d1d1;
+}
+
+.card-text {
+  font-weight: 400;
+}
+
 .box-shadow {
   box-shadow: var(--box-shadow);
 }
@@ -1018,10 +1037,14 @@ align-items: center;
 }
 
 .card-footer {
-  background-color: #fff;
+  background-color: transparent;
   font-size: 14px; 
   font-weight: 600;
   text-align: right;
+}
+
+.article-card-image {
+  margin-bottom: 24px;
 }
 
 .social-icon {
